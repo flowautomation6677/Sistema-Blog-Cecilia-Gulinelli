@@ -1,0 +1,144 @@
+@import "tailwindcss";
+
+@plugin "tailwindcss-animate";
+
+:root {
+  /* Brand Colors - Adjusted Gold for Contrast & CRO */
+  --gold-300: #E6C87C;
+  /* Highlights */
+  --gold-500: #B08D55;
+  /* Base Gold - Darker for text readability on white */
+  --gold-600: #8C6D3F;
+  /* Hover state */
+  --gold-vibrant: #D4AF37;
+  /* For gradients/borders (Eye-catching) */
+
+  --green-800: #1A3C34;
+  --green-900: #0F231E;
+
+  /* Base - Light Mode */
+  --background: #F9F9F7;
+  --foreground: #1A3C34;
+
+  /* ... standard shadcn vars ... */
+  --card: #FFFFFF;
+  --card-foreground: #1A3C34;
+
+  --popover: #FFFFFF;
+  --popover-foreground: #1A3C34;
+
+  --primary: #1A3C34;
+  --primary-foreground: #FFFFFF;
+
+  --secondary: #B08D55;
+  --secondary-foreground: #FFFFFF;
+
+  --muted: #EBEBE6;
+  --muted-foreground: #52525B;
+  /* Darker muted for better readability */
+
+  --accent: #F0E6D2;
+  --accent-foreground: #1A3C34;
+
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+
+  --border: #E5E5E0;
+  --input: #E4E4E7;
+  /* Slightly darker input border */
+  --ring: #B08D55;
+
+  --radius: 0.5rem;
+}
+
+/* Animations */
+@keyframes shine {
+  from {
+    background-position: 200% 0;
+  }
+
+  to {
+    background-position: -200% 0;
+  }
+}
+
+.animate-shine {
+  animation: shine 6s linear infinite;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* Base - Dark Mode */
+    --background: #0F231E;
+    /* Very dark green, almost black */
+    --foreground: #F9F9F7;
+
+    --card: #1A3C34;
+    --card-foreground: #F9F9F7;
+
+    --popover: #1A3C34;
+    --popover-foreground: #F9F9F7;
+
+    --primary: #C5A059;
+    /* Gold becomes primary in dark mode */
+    --primary-foreground: #0F231E;
+
+    --secondary: #1F4B43;
+    --secondary-foreground: #F9F9F7;
+
+    --muted: #1A3C34;
+    --muted-foreground: #A1A1AA;
+
+    --accent: #2C5E54;
+    --accent-foreground: #F9F9F7;
+
+    --destructive: #7F1D1D;
+    --destructive-foreground: #F9F9F7;
+
+    --border: #2C5E54;
+    --input: #2C5E54;
+    --ring: #C5A059;
+  }
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  --radius-sm: calc(var(--radius) - 2px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+
+  /* Font mapping */
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
