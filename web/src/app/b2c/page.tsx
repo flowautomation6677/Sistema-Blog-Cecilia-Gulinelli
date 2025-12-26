@@ -50,29 +50,29 @@ export default function B2CPage() {
             <section className="container max-w-5xl mx-auto px-4 -mt-10 relative z-10">
                 <div className="grid md:grid-cols-3 gap-6 mb-20">
                     <Card className="bg-card/95 backdrop-blur border-t-4 border-t-destructive shadow-lg">
-                        <CardHeader>
+                        <CardHeader className="items-center text-center">
                             <ShieldAlert className="h-8 w-8 text-destructive mb-2" />
                             <CardTitle className="text-lg">Regras Novas</CardTitle>
                         </CardHeader>
-                        <CardContent className="text-sm text-muted-foreground">
+                        <CardContent className="text-sm text-muted-foreground text-center">
                             A Reforma da Previdência mudou tudo. Um pedido feito errado pode reduzir seu benefício em até 40% para sempre.
                         </CardContent>
                     </Card>
                     <Card className="bg-card/95 backdrop-blur border-t-4 border-t-primary shadow-lg">
-                        <CardHeader>
+                        <CardHeader className="items-center text-center">
                             <Clock className="h-8 w-8 text-primary mb-2" />
                             <CardTitle className="text-lg">Tempo Especial</CardTitle>
                         </CardHeader>
-                        <CardContent className="text-sm text-muted-foreground">
+                        <CardContent className="text-sm text-muted-foreground text-center">
                             Converteu seu tempo de trabalho em ambiente nocivo? Isso pode antecipar sua aposentadoria em anos.
                         </CardContent>
                     </Card>
                     <Card className="bg-card/95 backdrop-blur border-t-4 border-t-gold-500 shadow-lg">
-                        <CardHeader>
+                        <CardHeader className="items-center text-center">
                             <BadgeCheck className="h-8 w-8 text-gold-600 mb-2" />
                             <CardTitle className="text-lg">Análise de CNIS</CardTitle>
                         </CardHeader>
-                        <CardContent className="text-sm text-muted-foreground">
+                        <CardContent className="text-sm text-muted-foreground text-center">
                             Identificamos "buracos" e pendências no seu extrato que o INSS costuma ignorar na hora de conceder o benefício.
                         </CardContent>
                     </Card>

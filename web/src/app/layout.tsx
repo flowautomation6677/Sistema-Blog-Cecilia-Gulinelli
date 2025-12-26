@@ -7,6 +7,8 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/header";
+import { Footer } from "@/components/footer";
+import { FloatingWhatsapp } from "@/components/floating-whatsapp"
 import { cn } from "@/lib/utils";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
@@ -28,9 +30,8 @@ export default function RootLayout({
         <main className="flex-1">
           {children}
         </main>
-        <footer className="w-full py-6 text-center text-sm text-muted-foreground border-t border-border/40">
-          © {new Date().getFullYear()} Gulinelli Advocacia. Todos os direitos reservados.
-        </footer>
+        <FloatingWhatsapp />
+        <Footer />
       </body>
     </html>
   );

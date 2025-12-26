@@ -52,29 +52,29 @@ export default function B2BPage() {
             <section className="container max-w-5xl mx-auto px-4 -mt-10 relative z-10">
                 <div className="grid md:grid-cols-3 gap-6 mb-20">
                     <Card className="bg-card/90 backdrop-blur border-l-4 border-l-destructive shadow-lg">
-                        <CardHeader>
+                        <CardHeader className="items-center text-center">
                             <AlertTriangle className="h-8 w-8 text-destructive mb-2" />
                             <CardTitle className="text-lg">Risco Oculto</CardTitle>
                         </CardHeader>
-                        <CardContent className="text-sm text-muted-foreground">
+                        <CardContent className="text-sm text-muted-foreground text-center">
                             O Limbo Previdenciário e a má gestão de afastados podem estar custando até 5% do seu faturamento líquido anual.
                         </CardContent>
                     </Card>
                     <Card className="bg-card/90 backdrop-blur border-l-4 border-l-gold-500 shadow-lg">
-                        <CardHeader>
+                        <CardHeader className="items-center text-center">
                             <TrendingDown className="h-8 w-8 text-gold-600 mb-2" />
                             <CardTitle className="text-lg">Carga Tributária</CardTitle>
                         </CardHeader>
-                        <CardContent className="text-sm text-muted-foreground">
+                        <CardContent className="text-sm text-muted-foreground text-center">
                             Reduza drasticamente o FAP (Fator Acidentário de Prevenção) com gestão técnica e administrativa assertiva.
                         </CardContent>
                     </Card>
                     <Card className="bg-card/90 backdrop-blur border-l-4 border-l-primary shadow-lg">
-                        <CardHeader>
+                        <CardHeader className="items-center text-center">
                             <CheckCircle2 className="h-8 w-8 text-primary mb-2" />
                             <CardTitle className="text-lg">Recuperação</CardTitle>
                         </CardHeader>
-                        <CardContent className="text-sm text-muted-foreground">
+                        <CardContent className="text-sm text-muted-foreground text-center">
                             Recupere verbas indenizatórias pagas indevidamente nos últimos 5 anos pela via administrativa.
                         </CardContent>
                     </Card>
