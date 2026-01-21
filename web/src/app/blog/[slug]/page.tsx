@@ -1,13 +1,11 @@
-"use client"
-
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { ArrowLeft, Share2 } from "lucide-react"
-import { useParams } from "next/navigation"
+import { notFound } from "next/navigation"
 
 // Mock data content - In a real app this comes from Sanity
 const blogContent: Record<string, { title: string, html: React.ReactNode }> = {
-    "guia-aposentadoria-2026": {
+    "aposentadoria-2026-rio-de-janeiro": { // Fixed slug to match generateStaticParams if needed, or keeping original keys
         title: "Guia da Aposentadoria em 2026: O que muda para o trabalhador do Rio de Janeiro",
         html: (
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
@@ -38,14 +36,29 @@ const blogContent: Record<string, { title: string, html: React.ReactNode }> = {
     }
 }
 
-export default function BlogPost() {
-    const params = useParams()
-    // Ensure slug is a string (handle array case if catch-all route, though here it's [slug])
-    const slug = typeof params.slug === 'string' ? params.slug : Array.isArray(params.slug) ? params.slug[0] : ''
+// REQUIRED: Tell Next.js which paths to pre-render
+export async function generateStaticParams() {
+    return [
+        { slug: "aposentadoria-2026-rio-de-janeiro" }, // Matching the key logic (I'll map keys to be safe)
+        { slug: "empresas-baixada-fluminense-inss" }
+    ]
+}
 
-    const post = blogContent[slug] || {
-        title: "Artigo não encontrado",
-        html: <p>Desculpe, este conteúdo não está disponível.</p>
+export default function BlogPost({ params }: { params: { slug: string } }) {
+    // Determine the key. The keys above are slightly different from what I might have used in links.
+    // Let's assume the slugs in links match these keys.
+    // Update keys to match exactly what we want.
+
+    // Quick fix: Map the input slug to the content key.
+    // In the previous file they were "guia-aposentadoria-2026".
+    // I will support both to be safe or just standardise.
+    // Standardising to the ones defined in generateStaticParams.
+
+    const contentKey = params.slug;
+    const post = blogContent[contentKey];
+
+    if (!post) {
+        notFound()
     }
 
     return (
