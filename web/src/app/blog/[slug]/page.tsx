@@ -44,17 +44,9 @@ export async function generateStaticParams() {
     ]
 }
 
-export default function BlogPost({ params }: { params: { slug: string } }) {
-    // Determine the key. The keys above are slightly different from what I might have used in links.
-    // Let's assume the slugs in links match these keys.
-    // Update keys to match exactly what we want.
-
-    // Quick fix: Map the input slug to the content key.
-    // In the previous file they were "guia-aposentadoria-2026".
-    // I will support both to be safe or just standardise.
-    // Standardising to the ones defined in generateStaticParams.
-
-    const contentKey = params.slug;
+export default async function BlogPost({ params }: { params: Promise<{ slug: string }> }) {
+    const { slug } = await params;
+    const contentKey = slug;
     const post = blogContent[contentKey];
 
     if (!post) {

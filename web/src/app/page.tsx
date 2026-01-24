@@ -11,10 +11,10 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <Hero
-        title="Excelência Jurídica em Direito Previdenciário e planejamento contributivo para empresários"
+        title="Excelência Jurídica em Direito Previdenciário e Planejamento Contributivo Previdenciário Estratégico para Empresários"
         subtitle="Soluções jurídicas personalizadas para garantir sua aposentadoria e proteger seus direitos na saúde."
         ctaText="Fale com um Especialista"
-        imageSrc="/cecilia-home.jpg"
+        imageSrc="/cecilia-new.jpg"
         variant="b2b" // Keeps the gold theme base
         ctaAction={() => window.open("https://wa.me/5565999999999?text=Olá, vim pelo site e gostaria de atendimento.", "_blank")}
       />
@@ -33,19 +33,17 @@ export default function Home() {
             <p className="text-lg text-muted-foreground leading-relaxed">
               Especialista em Direito Previdenciário e Médico, oferece um atendimento acolhedor e estratégico, garantindo que cada caso receba a atenção e a expertise necessárias para o melhor desfecho possível.
             </p>
-            <Button variant="outline" className="border-gold-500 text-gold-700 hover:bg-gold-50">
-              Saiba Mais
-            </Button>
+
           </div>
           {/* Optional: You could add another image or stats here if needed, or just keep it text focused since hero has image */}
           <div className="flex-1 bg-muted/20 rounded-2xl p-8 border border-border">
             <div className="grid grid-cols-2 gap-6 text-center">
               <div className="p-4">
-                <div className="text-4xl font-bold text-gold-600 mb-2">+15</div>
+                <div className="text-4xl font-bold text-gold-600 mb-2">+13</div>
                 <div className="text-sm text-muted-foreground">Anos de Experiência</div>
               </div>
               <div className="p-4">
-                <div className="text-4xl font-bold text-gold-600 mb-2">+1000</div>
+                <div className="text-4xl font-bold text-gold-600 mb-2">+3.000</div>
                 <div className="text-sm text-muted-foreground">Casos Solucionados</div>
               </div>
               <div className="p-4">
@@ -75,7 +73,7 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
                 <p className="text-muted-foreground">
-                  Planejamento contributivo estratégico para empresários: pague o justo hoje para garantir o teto amanhã.
+                  Planejamento contributivo estratégico para empresários: empresários que pagam pouco INSS hoje podem pagar caro amanhã.
                 </p>
                 <Button asChild variant="gold" className="w-full mt-4">
                   <Link href="/planejamento-contributivo" className="flex items-center justify-center w-full">

@@ -48,7 +48,7 @@ export function Hero({ title, subtitle, ctaText, ctaAction, imageSrc, variant = 
                         "inline-block rounded-full px-4 py-1.5 text-sm font-semibold tracking-wide uppercase shadow-sm",
                         isB2B ? "border border-gold-500/30 text-gold-600 bg-gold-500/5" : "border border-green-800/30 text-primary bg-green-800/5"
                     )}>
-                        Advocacia Especializada {isB2B ? "Empresarial" : "Previdenciária"}
+                        Advocacia Especializada {isB2B ? "Em Direito Previdenciário" : "Previdenciária"}
                     </div>
 
                     <h1 className="text-4xl font-extrabold tracking-tight lg:text-6xl text-primary drop-shadow-sm leading-[1.1]">

@@ -48,7 +48,7 @@ export default function ContributivePlanningPage() {
                 ctaText="Calcular Meu Desperdício"
                 ctaAction={() => document.getElementById('calculadora')?.scrollIntoView({ behavior: 'smooth' })}
                 variant="b2b"
-                imageSrc="/cecilia-home.jpg" // Using existing image for consistency
+                imageSrc="/planejamento-new.jpg"
             />
 
             <section className="container max-w-5xl mx-auto px-4 -mt-10 relative z-10">
@@ -108,7 +108,10 @@ export default function ContributivePlanningPage() {
                             <ul className="space-y-3">
                                 {[
                                     "Cálculo exato do ROI (Retorno sobre Investimento) do INSS",
-                                    "Definição do valor ideal de Pró-labore x Dividendos",
+                                    "Diagnóstico completo PF + PJ",
+                                    "Estratégia contributiva personalizada",
+                                    "Simulações de aposentadoria e benefícios",
+                                    "Plano de ação estruturado",
                                     "Análise de tempo faltante para aposentadoria programada",
                                     "Regularização de pendências no CNIS (INSS)"
                                 ].map((item) => (

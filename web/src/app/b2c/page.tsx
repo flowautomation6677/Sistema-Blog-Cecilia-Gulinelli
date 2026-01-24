@@ -86,7 +86,7 @@ export default function B2CPage() {
                                 Não se aposente no escuro. Fazemos um estudo completo da sua vida laboral para projetar o melhor momento e o melhor valor de benefício.
                             </p>
                             <ul className="space-y-3">
-                                {["Simulação de 3 cenários de renda futura", "Correção de vínculos no CNIS", "Averbação de tempo rural ou militar", "Planejamento tributário para autônomos"].map((item, i) => (
+                                {["Simulação de 3 cenários de renda futura", "Correção de vínculos no CNIS", "Averbação de militar", "Planejamento tributário para autônomos"].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3">
                                         <BadgeCheck className="h-5 w-5 text-primary flex-shrink-0" />
                                         <span>{item}</span>
