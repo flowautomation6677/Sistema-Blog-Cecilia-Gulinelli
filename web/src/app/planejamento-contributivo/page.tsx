@@ -56,10 +56,10 @@ export default function ContributivePlanningPage() {
                     <Card className="bg-white/95 backdrop-blur border-l-4 border-l-destructive shadow-lg">
                         <CardHeader className="items-center text-center">
                             <AlertTriangle className="h-8 w-8 text-destructive mb-2" />
-                            <CardTitle className="text-lg">O Mito do Teto</CardTitle>
+                            <CardTitle className="text-lg">O Mito do Teto (Limite Máximo)</CardTitle>
                         </CardHeader>
                         <CardContent className="text-sm text-muted-foreground text-center">
-                            Contribuir sobre o teto hoje não significa receber o teto amanhã. A reforma da previdência mudou as regras do jogo.
+                            Contribuir sobre o teto (valor máximo) hoje não significa receber o teto (valor máximo) amanhã. A reforma da previdência mudou as regras do jogo.
                         </CardContent>
                     </Card>
                     <Card className="bg-white/95 backdrop-blur border-l-4 border-l-gold-500 shadow-lg">
@@ -68,16 +68,16 @@ export default function ContributivePlanningPage() {
                             <CardTitle className="text-lg">Dinheiro no Ralo</CardTitle>
                         </CardHeader>
                         <CardContent className="text-sm text-muted-foreground text-center">
-                            Milhares de empresários no RJ pagam até 30% a mais do que o necessário para obter o mesmo benefício.
+                            Milhares de empresários pagam até 30% a mais do que o necessário para obter o mesmo benefício.
                         </CardContent>
                     </Card>
                     <Card className="bg-white/95 backdrop-blur border-l-4 border-l-primary shadow-lg">
                         <CardHeader className="items-center text-center">
                             <CheckCircle2 className="h-8 w-8 text-primary mb-2" />
-                            <CardTitle className="text-lg">Estratégia Legal</CardTitle>
+                            <CardTitle className="text-lg">Planejamento Contributivo Previdenciário</CardTitle>
                         </CardHeader>
                         <CardContent className="text-sm text-muted-foreground text-center">
-                            Ajuste seu Pró-labore e dividendos para pagar menos impostos agora e garantir a melhor aposentadoria possível.
+                            Transforme sua contribuição mensal em um investimento seguro. Alinhamos juridicamente o seu recolhimento atual aos seus objetivos futuros, garantindo que você conquiste o melhor benefício possível sem desperdícios.
                         </CardContent>
                     </Card>
                 </div>
@@ -93,13 +93,13 @@ export default function ContributivePlanningPage() {
                         </h2>
                         <div className="space-y-4 text-lg text-muted-foreground leading-relaxed">
                             <p>
-                                O maior erro do empresário fluminense é achar que basta assinar a guia do INSS pelo teto para estar seguro.
+                                O maior erro do empresário é achar que basta assinar a guia do INSS pelo teto (valor máximo) para estar seguro.
                             </p>
                             <p>
                                 <strong>A realidade é matemática:</strong> O INSS faz uma média de todas as suas contribuições. Anos pagando o mínimo no início da carreira puxam seu benefício para baixo, mesmo que você pague o teto agora.
                             </p>
                             <p>
-                                Com o <strong>Planejamento Contributivo</strong>, nós analisamos seu histórico completo e desenhamos o cenário exato: quanto pagar, por quanto tempo, e qual será o retorno real (ROI) do seu investimento previdenciário.
+                                Com o <strong>Planejamento Contributivo Previdenciário</strong>, nós analisamos seu histórico completo e desenhamos o cenário exato: quanto pagar, por quanto tempo, e qual será o retorno real (ROI) do seu investimento previdenciário.
                             </p>
                         </div>
 

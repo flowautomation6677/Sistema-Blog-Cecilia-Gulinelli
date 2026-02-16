@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <main className="min-h-screen bg-background">
       <Hero
-        title="Excelência Jurídica em Direito Previdenciário e Planejamento Contributivo Previdenciário Estratégico para Empresários"
+        title="Excelência Jurídica em Direito Previdenciário e Planejamento Contributivo Estratégico para Empresários"
         subtitle="Soluções jurídicas personalizadas para garantir sua aposentadoria e proteger seus direitos na saúde."
         ctaText="Fale com um Especialista"
         imageSrc="/cecilia-new.jpg"
@@ -31,7 +31,7 @@ export default function Home() {
               Com anos de atuação dedicada, Dra. Cecilia Gulinelli construiu uma trajetória sólida na advocacia, pautada pela ética, transparência e busca incessante pelos direitos de seus clientes.
             </p>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              Especialista em Direito Previdenciário e Médico, oferece um atendimento acolhedor e estratégico, garantindo que cada caso receba a atenção e a expertise necessárias para o melhor desfecho possível.
+              Especialista em Direito Previdenciário, oferece um atendimento acolhedor e estratégico, garantindo que cada caso receba a atenção e a expertise necessárias para o melhor desfecho possível.
             </p>
 
           </div>
@@ -69,7 +69,7 @@ export default function Home() {
               <CardHeader>
                 <Building2 className="w-12 h-12 text-gold-600 mb-4" />
                 <CardTitle className="text-2xl">Para Empresas</CardTitle>
-                <CardDescription>Gestão Estratégica e Tributária</CardDescription>
+                <CardDescription>Gestão Estratégica</CardDescription>
               </CardHeader>
               <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
                 <p className="text-muted-foreground">
@@ -92,7 +92,7 @@ export default function Home() {
               </CardHeader>
               <CardContent className="space-y-4 flex-1 flex flex-col justify-between">
                 <p className="text-muted-foreground">
-                  Planejamento de aposentadoria, BPC/LOAS, auxílio-doença, pensão por morte e revisão de benefícios.
+                  Conquiste a melhor aposentadoria possível. Atuamos com Aposentadorias (foco em elevar o valor do benefício), Planejamento, Revisões, BPC/LOAS e Pensões.
                 </p>
                 <Button asChild variant="default" className="w-full mt-4">
                   <Link href="/b2c" className="flex items-center justify-center w-full">
