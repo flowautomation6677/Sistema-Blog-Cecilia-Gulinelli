@@ -1,6 +1,7 @@
 "use client"
 
 import Link from "next/link"
+// @ts-ignore - Lucide icons are marked deprecated in some environments but are correct for this version
 import { MapPin, Phone, Facebook, Instagram, Linkedin, MessageCircle } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import Image from "next/image"
@@ -21,9 +22,9 @@ export function Footer() {
                         Escritório especializado em Direito Previdenciário Empresarial e para Pessoas Físicas. Garantindo direitos e recuperando créditos com segurança jurídica.
                     </p>
                     <div className="flex gap-4 pt-2 justify-center md:justify-start">
-                        <Link href="#" className="hover:text-gold-500 transition-colors"><Instagram className="h-5 w-5" /></Link>
-                        <Link href="#" className="hover:text-gold-500 transition-colors"><Facebook className="h-5 w-5" /></Link>
-                        <Link href="#" className="hover:text-gold-500 transition-colors"><Linkedin className="h-5 w-5" /></Link>
+                        {/* @ts-ignore */}<Link href="https://www.instagram.com/ceciliagulinelli__inss?igsh=MXhmcjNpdGw1ZmZxYQ%3D%3D" target="_blank" className="hover:text-gold-500 transition-colors"><Instagram className="h-5 w-5" /></Link>
+                        {/* @ts-ignore */}<Link href="#" className="hover:text-gold-500 transition-colors"><Facebook className="h-5 w-5" /></Link>
+                        {/* @ts-ignore */}<Link href="https://www.linkedin.com/in/draceciliagulinelli/" target="_blank" className="hover:text-gold-500 transition-colors"><Linkedin className="h-5 w-5" /></Link>
                     </div>
                 </div>
 
@@ -69,7 +70,7 @@ export function Footer() {
                                 <MapPin className="h-5 w-5 text-gold-500 flex-shrink-0 md:mt-0.5" />
                                 <div>
                                     <strong className="block text-white mb-1">Atendimento Online</strong>
-                                    <p>Abrangência: Todo Rio de Janeiro e Duque de Caxias.</p>
+                                    <p>Abrangência: Todo Rio de Janeiro</p>
                                 </div>
                             </div>
                             <div className="flex flex-col md:flex-row items-center md:items-start gap-2 md:gap-3">
